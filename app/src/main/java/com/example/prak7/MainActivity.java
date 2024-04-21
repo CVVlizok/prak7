@@ -34,7 +34,8 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 // Изменили эту часть кода
-                Intent serviceIntent = new Intent(MainActivity.this, NotificationPermissionService.class);
+                Intent serviceIntent = new Intent(MainActivity.this,
+                        NotificationPermissionService.class);
                 startService(serviceIntent);
             }
         });
